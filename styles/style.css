@@ -1,0 +1,247 @@
+html {
+font-size:62.5%;
+}
+
+header {
+background-color: #fff;
+color:#fff;
+position: fixed;
+width: 100%;
+}
+
+nav {
+border-bottom: 1px solid black !important;
+width: 100%;
+}
+
+nav ul {
+padding: 15px 0;
+text-align: center;
+margin: 0;
+}
+
+nav li {
+text-align: center;
+margin-right: 20px;
+display: inline-block;
+}
+
+nav li a {
+text-decoration: none;
+color: #fe1313;
+text-transform: uppercase;
+}
+
+nav li a:hover {
+border: 1px solid #fe1313;
+border-radius: 5px;
+padding: 4px;
+}
+
+section h1 {
+text-align: center;
+padding-top: 100px;
+color: #4fa3ff;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+#about{
+padding: 5%;
+height: 30vh;
+text-align: center;
+background-color: #fe1313;
+color:#fff;
+background-blend-mode: multiply; /* Pour mixer couleurs et photos */
+background-image: url(../images/dev.jpg);
+}
+
+#about h1 {
+font-weight: bold;
+font-family: DejaVu Sans Mono, monospace;
+text-transform: uppercase;
+font-size: 3rem;
+text-shadow: 3px 2px #011831;
+color: #FFF;
+}
+
+#about h2 {
+font-family: 'open sans',arial,sans-serif;
+text-transform: uppercase;
+letter-spacing: 0.3em;
+margin-top: 5px;
+font-size: 1.5rem;
+}
+.trait {
+padding-bottom: 30px;
+border-bottom: 1px solid #fff;
+}
+
+#about p {
+margin: 100px 0;
+}
+
+#competences {
+
+height: 700px;
+
+}
+#competences h2 {
+font-size: 22px;
+}
+
+.box {
+text-align: center;
+margin-top: 150px;
+}
+
+
+.skills {
+width: 285px;
+height: 210px;
+margin-right: 70px;
+display: inline-block;
+vertical-align: middle;
+background-color: #F2F2F2;
+padding-top: 20px;
+border-bottom: 2px solid #4FA4FF;
+color: #0f2339;
+box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+
+}
+#os {
+text-align: center;
+padding-top: 50px;
+}
+
+
+#os ul li {
+margin-right: 20px;
+display: inline-block;
+text-align: center;
+}
+
+
+
+#experiences {
+/*height: 700px; */
+background-color: #F2F2F2;
+padding: 50px;
+}
+#experiences h1 {
+  margin-bottom: 50px;
+
+}
+
+.ficheposte{
+  text-align: center;
+  margin: 50px;
+}
+.date {
+width: 100px;
+color: #fff;
+background-color: #4FA4FF;
+padding: 2px;
+display: inline-block;
+vertical-align: top;
+font-weight: bold;
+border-radius: 5px;
+}
+
+.poste {
+background-color: #fff;
+display: inline-block;
+color: #0f2339;
+width: 800px;
+vertical-align: top;
+text-align: left;
+padding: 15px;
+margin-left: 10px;
+/*box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);*/
+border-radius: 20px;
+border-top: 2px solid #4fa3ff;
+}
+
+.poste ul {
+margin-left: 20px;
+}
+.poste li {
+  list-style: circle;
+
+}
+
+.poste h2{
+font-family: 'open sans',arial,sans-serif;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: bold;
+
+
+
+}
+.poste h3 {
+color: #4FA4FF;
+font-family: 'open sans',arial,sans-serif;
+font-size: 16px;
+}
+
+
+#formations {
+height: 700px;
+}
+
+#projets {
+height: 600px;
+background-color: #0f2339;
+color: #FFF;
+
+
+}
+
+#contact {
+height: 700px;
+}
+
+footer {
+background-color: #0f2339;
+border-top: 2px solid #4FA4FF !important;
+height: 50px;
+}
+
+footer p {
+  padding-top: 20px;
+  margin-bottom: 0;
+  color: #fff;
+
+}
+
+
+@media screen and (max-width : 680px) {
+
+
+.nav li {
+display: block;
+}
+nav li:hover {
+  background-color: #fe1313;
+  width:100vw;
+
+  }
+ nav li a:hover {
+  border: 0px;
+  color: #fff;
+  }
+
+nav ul li, nav ul li a {
+    padding: 10px 0px 10px 0px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
