@@ -3,26 +3,32 @@ font-size:62.5%;
 }
 
 body {
-overflow: hidden;
-background-color: #fff;
+overflow-x: hidden;
+font-size: 1.4rem;
+
 }
 
 header {
-background-color: #fff;
-color:#fff;
-position: fixed;
-width: 100%;
+position:fixed;
+z-index: 9999;
 }
 
+
 nav {
-border-bottom: 1px solid black !important;
+border-bottom: 1px solid #fff;
 width: 100%;
+padding:5px;
+position:fixed;
+background:#45caa5;
+top:0;
+left:0;
 }
 
 nav ul {
 padding: 15px 0;
 text-align: center;
 margin: 0;
+ font-size:16px;
 }
 
 nav li {
@@ -33,20 +39,21 @@ display: inline-block;
 
 nav li a {
 text-decoration: none;
-color: #fe1313;
+color: #fff;
 text-transform: uppercase;
 }
 
 nav li a:hover {
-border: 1px solid #fe1313;
+border: 1px solid #fff;
 border-radius: 5px;
 padding: 4px;
 }
 
 section {
 
-padding: 0 100px; /*Rapprocher le texte */
-margin: 0 -100px; /* cacher les espaces causé par la rotation */
+padding: 100px; /*Rapprocher le texte */
+margin-left:-100px; /* cacher les espaces causé par la rotation */
+margin-right:-100px;
 /* Rotation */
 -ms-transform: rotate(-3deg); /* IE 9 */
 -webkit-transform: rotate(-3deg); /* Safari */
@@ -55,17 +62,20 @@ transform: rotate(-3deg);
 
 section h1 {
 text-align: center;
-padding-top: 100px;
-color: #4fa3ff;
+color: #45caa5;
 text-transform: uppercase;
 letter-spacing: 2px;
 }
 
+h1,.box, #os,.ficheposte, .fichesformations{
+ transform:rotate(3deg);
+}
+
 #about{
 padding: 5%;
-height: 20vh;
+height: 30vh;
 text-align: center;
-background-color: #fe1313;
+background-color: #45caa5;
 color:#fff;
 background-blend-mode: multiply; /* Pour mixer couleurs et photos */
 background-image: url(../images/dev.jpg);
@@ -78,6 +88,7 @@ text-transform: uppercase;
 font-size: 3rem;
 text-shadow: 3px 2px #011831;
 color: #FFF;
+padding-top: 100px;
 }
 
 #about h2 {
@@ -86,11 +97,13 @@ text-transform: uppercase;
 letter-spacing: 0.3em;
 margin-top: 5px;
 font-size: 1.5rem;
+transform: rotate(3deg);
 }
 .trait {
 padding-bottom: 30px;
 border-bottom: 1px solid #fff;
 }
+
 
 
 #competences {
@@ -116,7 +129,7 @@ display: inline-block;
 vertical-align: middle;
 background-color: #F2F2F2;
 padding-top: 20px;
-border-bottom: 2px solid #4FA4FF;
+border-bottom: 2px solid #45caa5;
 color: #0f2339;
 box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
 border-radius: 10px;
@@ -153,7 +166,7 @@ padding: 50px;
 .date {
 width: 100px;
 color: #fff;
-background-color: #4FA4FF;
+background-color: #45caa5;
 padding: 2px;
 display: inline-block;
 vertical-align: top;
@@ -172,7 +185,7 @@ padding: 15px;
 margin-left: 10px;
 /*box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);*/
 border-radius: 20px;
-border-top: 2px solid #4fa3ff;
+border-top: 2px solid #45caa5;
 }
 
 .poste ul {
@@ -193,38 +206,68 @@ font-weight: bold;
 
 }
 .poste h3 {
-color: #4FA4FF;
+color: #fff;
 font-family: 'open sans',arial,sans-serif;
 font-size: 16px;
 }
 
 
 #formations {
-height: 700px;
 }
+
+.fichesformations{
+  text-align: center;
+  margin-top: 100px;
+
+}
+.formation{
+  margin-right:10px;
+  padding: 15px;
+  background-color: #F2F2F2;
+  display: inline-block;
+  color: #0f2339;
+  border-radius: 20px;
+  border-top: 2px solid #45caa5;
+}
+
+
+
+/*
+
 
 #projets {
 height: 600px;
-background-color: #0f2339;
+background-color: #45caa5;
 color: #FFF;
-
-
 }
+
+#projets h1 {
+color: #fff;
+}
+*/
+
 
 #contact {
 height: 700px;
+background-color: #45caa5;
+transform: none;
+}
+#contact h1 {
+color: #fff;
+transform: none;
 }
 
 footer {
-background-color: #0f2339;
-border-top: 2px solid #4FA4FF !important;
+background-color: #e2e0e0;
 height: 50px;
+z-index: 9999;
 }
 
 footer p {
   padding-top: 20px;
+  padding-left: 20px;
   margin-bottom: 0;
-  color: #fff;
+  color: black;
 
 }
 
@@ -236,13 +279,13 @@ footer p {
 display: block;
 }
 nav li:hover {
-  background-color: #fe1313;
+  background-color: #fff;
   width:100vw;
 
   }
  nav li a:hover {
   border: 0px;
-  color: #fff;
+  color: #45caa5;
   }
 
 nav ul li, nav ul li a {
