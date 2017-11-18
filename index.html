@@ -16,6 +16,7 @@
 <!--<link rel="stylesheet" type="text/css" href="styles/style.css"> -->
 <link rel="stylesheet" type="text/css" href="styles/reset.css">
 <link rel="stylesheet" type="text/css" href="styles/test.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -23,13 +24,14 @@
 <header>
 
   <nav>
-    <ul class="nav">
-      <li><a href="#about">A propos</a> </li>
+    <ul class="nav" id="myTopnav">
+      <li><a href="#about" class="active"> A propos</a> </li>
       <li><a href="#competences">Compétences</a> </li>
       <li><a href="#experiences">Expériences</a></li>
       <li><a href="#formations">Formations</a> </li>
-      <li><a href="#projets">Projets</a></li>
+    <!--  <li><a href="#projets">Projets</a></li> -->
       <li><a href="#contact">Contact</a></li>
+      <li class="icon"><a href="javascript:void(0);" onclick="myMenu()">  &#9776;</a></li>
     </ul>
   </nav>
 
@@ -43,12 +45,18 @@
 <!-- section -->
 <div class="content">
 <section id="about">
-    <h1>Développeuse web  </h1>
+    <div class="apropos">
+
+    </div>
+    <h1>Développeuse java </h1>
   <h2> En format<span class="trait">ion java JEE à</span> Simplon.co </h2>
+  <h3> Recherche un stage de développeuse web du 15 janvier au 18 février 2018 </h3>
+  </div>
 
 </section>
 
 <section id="competences">
+  <div id="comp">
     <h1>Compétences  </h1>
 <div class="box">
 <div  class="skills">
@@ -91,13 +99,14 @@
      <li> Unix </li>
   </ul>
 </div>
-
+</div>
 
 </section>
 
 <section id="experiences">
+  <div id="exp">
     <h1>Experiences </h1>
-
+<div id="experiencesbloc">
 <div class="ficheposte">
 <div class="date">
 02/2016 /
@@ -166,9 +175,13 @@
   </ul>
 </div>
 </div>
+
+</div>
+</div>
 </section>
 
 <section id="formations">
+  <div id="education">
     <h1>Formations  </h1>
 
 <div class="fichesformations">
@@ -200,6 +213,7 @@
       <h3> Lycée de la tourelle - Sarcelles </h3>
      </div>
 </div>
+</div>
 
 
 
@@ -214,7 +228,13 @@
 
 <section id="contact">
     <h1>Contact </h1>
-
+    <div id="bloccontact">
+<ul class="contact">
+    <li><i class="fa fa-phone"></i> 07.82.46.71.15</li>
+       <li><i class="fa fa-home"></i> Saint-Gratien (95210)</li>
+       <li><i class="fa fa-envelope-o"></i> a-sophie.simon@live.fr</li>
+</ul>
+  </div>
 </section>
 
 </div>
@@ -224,7 +244,9 @@
 
 
 <footer>
-<p> Tous droits reservé 2017 - Anne-Sophie </p>
+<p> Tous droits reservé 2017 - Anne-Sophie <a href="https://www.linkedin.com/in/ansimon1/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+<a href="https://github.com/annesophiesimon" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a> </p>
+
 </footer>
 
 
