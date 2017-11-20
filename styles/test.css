@@ -221,7 +221,7 @@ font-weight: bold;
 
 }
 .poste h3 {
-color: #fff;
+color: #45caa5;
 font-family: 'open sans',arial,sans-serif;
 font-size: 16px;
 }
@@ -263,7 +263,7 @@ color: #fff;
 background-color: #45caa5;
 color: white;
 
-padding: 100px; /*Rapprocher le texte */
+padding: 50px 0px; /*Rapprocher le texte */
 margin-left:0px; /* cacher les espaces causé par la rotation */
 margin-right:0px;
 /* Rotation */
@@ -304,14 +304,14 @@ margin-bottom: 0;
 color: black;
 }
 
-i.fa {
+footer i.fa {
 color: #45caa5;
 font-size: 25px;
 float: right;
 margin-right: 10px;
 }
 
-.fa:hover {
+footer .fa:hover {
 color: #249c87;
 }
 
@@ -434,6 +434,18 @@ background-color: #fff;
   margin-right: auto;
   width: 200px;
 
+
+}
+#bloccontact {
+width: 200px;
+margin: 50px auto;
+}
+.contact li {
+display: block;
+font-size: 14px;
+}
+footer {
+height: 70px;
 }
 }
 @media only screen and (min-width:321px) and (max-width:583px){
